@@ -65,7 +65,7 @@ export default function Portfolio() {
         }}
       >
         <Dither
-          waveColor={[0.1, 0, 0.4]}
+          waveColor={[0.3, 0.2, 0.6]}
           enableMouseInteraction={false}
           colorNum={9.1}
           waveAmplitude={0.31}

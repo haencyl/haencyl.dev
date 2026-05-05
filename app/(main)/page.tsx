@@ -3,7 +3,7 @@
 import * as React from "react";
 import { ViewTransition } from "@/lib/view-transition";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { GithubLogoIcon } from "@phosphor-icons/react";
+import { ArrowUpRightIcon, GithubLogoIcon } from "@phosphor-icons/react";
 import Dither from "@/components/Dither";
 
 const projects = [
@@ -113,9 +113,9 @@ export default function Portfolio() {
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="text-primary hover:underline underline-offset-4 transition-all duration-200 hover:text-primary/80"
+                    className="inline-flex items-center gap-1 hover:underline underline-offset-4 transition-all duration-200 hover:text-primary/80"
                   >
-                    {link.label}
+                    {link.label} <ArrowUpRightIcon className="w-3.5 h-3.5" />
                   </a>
                 </ViewTransition>
               ))}
